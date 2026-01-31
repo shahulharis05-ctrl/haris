@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Online Portfolio</title>
+    <link rel="stylesheet" href="./Online Portfolio_files/style.css">
+    <link rel="stylesheet" href="./Online Portfolio_files/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">
+        <h2>Online Portfolio</h2>
+        <p> My Blog site</p>
+    </div>
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html#">Home</a>
+        <a href="http://127.0.0.1:5500/index.html#">About Me</a>
+        <a href="http://127.0.0.1:5500/index.html#">Services</a>
+        <a href="http://127.0.0.1:5500/index.html#">Skill</a>
+        <a href="http://127.0.0.1:5500/index.html#">Testimonial</a>
+        <a href="http://127.0.0.1:5500/index.html#">Experience</a>
+        <a href="http://127.0.0.1:5500/index.html#">Works</a>
+        <a href="http://127.0.0.1:5500/index.html#">Blog</a>
+        <a href="http://127.0.0.1:5500/index.html#">Contact Us</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>MOHAMED HARIS</h1>
+        <p>
+            Hi, I am a student of AMS college of engineering BE (COMPUTER SCIENCE &amp; BUSINESS SYSTEM)
+        </p>
+        <button>Hire Me</button>
+    </div>
+    <div class="hero-image">
+        <img src="./Online Portfolio_files/design.png" alt="profile image">
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+    <div class="about-image">
+        <img src="./Online Portfolio_files/haris2.png" alt="About Image">
+    </div>
+    <div class="about-text">
+        <h2>ABOUT ME</h2>
+        <p>
+            A passionate 2nd year BE CSBS student with basic knowledge of programming and business concepts, seeking opportunities to learn, grow, and apply classroom knowledge in practical environments.
+        </p>
+        <button class="download">DOWNLOAD RESUME</button>
+    </div>
+</section>
+    <div class="social-links">
+  <a href="https://www.instagram.com/haariz_05" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/haris%20mohamed" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
